@@ -1,0 +1,101 @@
+.valores {
+  list-style: circle;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: url(../html/assets/DAMOR_c_fondo.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+/* formato del cuadro del formulario*/
+
+
+@media (min-width:768px)
+{
+.body {
+    margin: auto;
+    width: 500px;
+    margin-top: 80px;
+    border-radius: 3%;
+    background-color: rgba(201, 201, 201, .7);
+}
+}
+
+#logo {
+  object-position: left;
+  width: 60px;
+  height: 40px;
+}
+
+img { /* se cambio a img1 por que cambiaba todas las imagenes */
+  border-radius: 45%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form {
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  color: #525c66;
+  font-size: 1em;
+  resize: none;
+  border-bottom: 2px solid #F6A015;
+}
+
+form button {
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px 10px 45px;
+  border: 0;
+  font-size: 1em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+form button.hover {
+  background-color: #046193;
+}
+textarea {
+  resize: none;
+}
+
+
+
+  img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-header{
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  color: rgb(246,160,28)
+  
+}
+
+h1{
+  text-align: center;
+  color: #F6A015;
+  font-size: 40px;
+
+}
+
