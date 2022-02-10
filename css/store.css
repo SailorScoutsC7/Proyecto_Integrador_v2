@@ -50,13 +50,12 @@
 
 
 
-#imagen{
+#logodamor{
   position: relative;
-    top: 50px; /* ajustar los valores para mover la imagen */
+    top: 50px; /* adjust the values ​​to move the image */
     left: 15px;
     width: 150px;
     height: 150px;
-    
     margin: 1%;
     display: block;
     position:  fixed;
@@ -73,14 +72,14 @@ background-image: url(fondo1.jpg )
   
   #backgroundcolor2{
 
-    background-image: url(fondo2.jpg )
+    background-image: url(fondo1.jpg )
     
       }
 
 
       #backgroundcolor3{
 
-        background-image: url(fondo3.jpg )
+        background-image: url(fondo1.jpg )
         
           }
 
@@ -93,7 +92,7 @@ background-image: url(fondo1.jpg )
               text-decoration-style: dashed;
               text-align: center;
               font-size: 35px;
-              color: rgb(246,160,28);
+              color: rgb(125, 78, 36);
               
               text-shadow: rgb(0, 0, 0) 2px 2px 2px;
               
@@ -110,6 +109,9 @@ border-radius: 40px;
 {
 border: 0px solid ;
 border-radius: 40px 40px 0px 0px;
+width: 280px;
+height: 160px;
+
 }
 
 

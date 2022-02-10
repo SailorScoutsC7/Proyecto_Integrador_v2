@@ -16,3 +16,15 @@ span {
     font-size: 90px;
     color: rgb(0, 0, 0)
   }
+
+  #logodamor{
+    position: relative;
+      top: 50px; /* adjust the values ​​to move the image */
+      left: 15px;
+      width: 150px;
+      height: 150px;
+      margin: 1%;
+      display: block;
+      position:  fixed;
+      z-index: 3;
+    }

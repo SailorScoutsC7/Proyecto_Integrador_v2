@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    background: url(../html/assets/DAMOR_c_fondo.png);
+    background: url(../html/assets/Store/fondos/FONDO_DAMOR.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -108,3 +108,15 @@ a{
         }
 }
 
+
+#logodamor{
+    position: relative;
+      top: 50px; /* adjust the values ​​to move the image */
+      left: 15px;
+      width: 150px;
+      height: 150px;
+      margin: 1%;
+      display: block;
+      position:  fixed;
+      z-index: 3;
+    }

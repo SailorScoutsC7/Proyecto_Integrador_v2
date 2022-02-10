@@ -1,5 +1,5 @@
-
-/*var registros=[];
+/*
+var registros=[];
   localStorage.setItem("Formularios", JSON.stringify(registros));
 */
 registros = JSON.parse(localStorage.getItem("Formularios"));
