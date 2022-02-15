@@ -1,7 +1,9 @@
+//Montar servidor(Usar solo una vez)
 /*
 var registros=[];
   localStorage.setItem("Formularios", JSON.stringify(registros));
 */
+//Mandar a llamar servidor desde el localStorage
 registros = JSON.parse(localStorage.getItem("Formularios"));
 class Form {
     constructor(nombre, email, telefono, mensaje) {
@@ -11,6 +13,7 @@ class Form {
         this.mensaje = mensaje;
     }
 }
+//Colocar en el botpon
 function agregar(formulario) {
 
     var nombre = document.getElementById('name').value;
@@ -19,7 +22,7 @@ function agregar(formulario) {
     var mensaje = document.getElementById('Mensaje').value;
     validarForm(nombre, email, telefono, mensaje);
 }
-
+//validación.
 function validarForm(nombre, email, telefono, mensaje) {
     var correcto = true;
 
@@ -45,12 +48,12 @@ function validarForm(nombre, email, telefono, mensaje) {
     if (!correcto) {
         alert("Algunos campos no estan correctos,")
     } else {
-        var formulario = new Form(nombre, email, telefono, mensaje);
-
-        registros.push(formulario);
-        localStorage.setItem("Formularios", JSON.stringify(registros));
-        sendEmail(formulario);
-        nombre = "";
+        
+        var formulario = new Form(nombre, email, telefono, mensaje);//CREA EL OBJETO CON LOS ATRIBUTOS DEL CONSTRUCTOR
+        registros.push(formulario);//AÑADE elemento a la lista
+        localStorage.setItem("Formularios", JSON.stringify(registros));//Guarda en local storage
+        sendEmail(formulario);//no la usen
+        nombre = "";//vacía campos
         email = "";
         telefono = "";
         mensaje = "";
