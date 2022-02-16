@@ -24,7 +24,7 @@ class Producto {
         this.img= img;
     }
 }
-function agregarProducto(formulario) {
+function agregarProducto() {
     var ID = document.getElementById('ID_Producto').value;
     var nombre = document.getElementById('nombre_producto').value;
     var precio = document.getElementById('Precio').value;
@@ -64,6 +64,7 @@ function tipoProducto(tipo,producto){
 }
 //función que usa los datos del LocaStorage para hacer las tarjetas del producto
 function añadirProducto(subir_producto){
+    var primerletra = subir_producto.tipo.charAt(0);
     const itemHTML = 
         '<div class="col-md-4">\n'                                         +
         '<div class="card" style="width: 18rem;">\n'                        +
@@ -71,14 +72,53 @@ function añadirProducto(subir_producto){
         '    <div class="card-body">\n'                                     +
         '        <h5 class="card-title">'+subir_producto.nombre+'</h5>\n'   +
         '        <h6 style="color: brown; font-sixe: 50px">'+subir_producto.precio+' MXN</h6>\n'   +
-        '        <p class="card-text">'+subir_producto.descripcion+'</p>\n' +
+        '        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#'+primerletra+subir_producto.ID+'" onclick="agregarModal()">Agregar</button>\n' +
         '    </div>\n'                                                      +
         '</div>\n'                                                          +
-        '</div>'                                                             ;
+        '</div>  \n'                                                          +  
+
+
+
+        '<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="'+primerletra+subir_producto.ID+'">\n'                                     +
+          '<div class="modal-dialog modal-lg modal-dialog-centered" role="document">\n'  +
+            '<div class="modal-content">\n'                                       +
+                '<div class="modal-header">\n'                                       +
+                  '<h5 class="modal-title" id="exampleModalLongTitle">'+subir_producto.nombre+'</h5>\n'                                       +
+                  '<button type="button" class="close" data-dismiss="modal" aria-label="Close">\n'                                       +
+                    '<span aria-hidden="true">&times;</span>\n'                                       +
+                  '</button>\n'                                       +
+                '</div>\n'                                       +
+                '<div class="modal-body">\n'                                       +
+                    '<div class="container-fluid">\n'                                       +
+                      '<div class="row">\n'                                       +
+                        '<div class="col-md-4"><img src="../html/assets/Store/'+subir_producto.tipo+'/'+subir_producto.img+'" class="img-fluid"></div>\n'+
+                        '<div class="col-md-8" style="text-align: justify;"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facilis dolores sit nobis sapiente qui iusto inventore assumenda, consequatur ipsa quod perspiciatis libero itaque impedit hic dignissimos recusandae sint harum.</p>\n'+
+                       '<div class="row">\n'                                       +
+                        '<div class="col-md-4">Precio: 70 pesos.</div>\n'                                       +
+                       '</div>\n'                                       +
+                       '<div class="row">\n'                                       +
+                        '<div class="btn-mas">\n'                                       +
+                            '<span>-</span><span class="numero">1</span><span>+</span>\n'                                       +
+                        '</div>\n'                                       +
+                       '</div>\n'                                       +
+                        '</div>\n'                                       +
+                      '</div>\n'                                       +
+                    '</div>\n'                                       +
+                  '</div>\n'                                       +
+                '<div class="modal-footer">\n'                                       +
+                  '<button type="button" class="btn btn-primary">Agregar</button>\n'                                       +
+                '</div>\n'                                       +
+              '</div>\n'                                       +
+          '</div>\n'                                       +
+        '</div>';
     const itemsContainer = document.getElementById(subir_producto.tipo);//define en que sección poner el producto
     itemsContainer.innerHTML += itemHTML;//añade el elemento HTML
+   
 }
-
+function agregarModal(){
+    
+    
+}
 // función que añade productos al carrusel
 function añadirProductosTempo(añadir_productoTemp){
     const itemHTML2 = 
@@ -102,10 +142,30 @@ for (let index = 0; index < recorrerArray.length; index++) {
         var subir_producto = recorrerArray[index][j];
        añadirProducto(subir_producto);
     }
-};
+}
 
 
     for (let t = 0; t < temporada.length; t++) {
         var añadir_productoTemp = temporada[t];
         añadirProductosTempo(añadir_productoTemp);
     }
+
+    // obtenerProductosLocalStorage(){
+    //     let productoLS;
+    //     if(localStorage.getItem('productos') === null){
+    //         productoLS = [];
+    //     }else{
+    //         productoLS = JSON.parse(localStorage.getItem('productos'));
+    //     }
+    //     return productoLS;
+    // }//obtenerProductosLocalStorage
+
+    // leerDatosProducto(producto){
+    //     const infoProducto = {
+    //     imagen : producto.querySelector('img').src,
+    //     titulo : producto.querySelector('h4').textContent,
+    //     precio : producto.querySelector('.precio span').textContent,
+    //     id : producto.querySelector('a').getAttribute('data-id'),//sirve para borrar solo el elemnto seleccionado
+    //     cantidad : 1
+    //     }//const infoProducto
+   

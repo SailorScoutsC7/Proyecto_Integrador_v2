@@ -32,7 +32,7 @@
   border-image-slice: 1;
   background: var(--gradient) !important;
   /* -webkit-background-clip: text !important; */
-  -webkit-text-fill-color: transparent !important;
+  
   border-image-source:  var(--gradient) !important; 
   text-decoration: none;
   transition: all .4s ease;

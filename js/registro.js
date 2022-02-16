@@ -26,6 +26,3 @@ function agregarUsuario(){
         alert("Contraseñas no coinciden");
     }
 }
-
-
-
