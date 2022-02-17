@@ -109,9 +109,9 @@ a{
 }
 
 
-#logodamor{
+/* #logodamor{
     position: relative;
-      top: 50px; /* adjust the values ​​to move the image */
+      top: 50px; /* adjust the values ​​to move the image 
       left: 15px;
       width: 150px;
       height: 150px;
@@ -119,4 +119,5 @@ a{
       display: block;
       position:  fixed;
       z-index: 3;
-    }
+    } 
+    */

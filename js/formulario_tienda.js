@@ -1,14 +1,14 @@
  console.log("Sistema funcionando");
 
  //Montar el servidor (Solo usar una vez)
- /*
- var regular=[];
-  localStorage.setItem("regular", JSON.stringify(regular));
-  var producto_covid=[];
-  localStorage.setItem("producto_covid", JSON.stringify(producto_covid));
-  var temporada=[];
-  localStorage.setItem("temporada", JSON.stringify(temporada));
-*/
+
+//   var regular=[];
+//    localStorage.setItem("regular", JSON.stringify(regular));
+//   var producto_covid=[];
+//   localStorage.setItem("producto_covid", JSON.stringify(producto_covid));
+//   var temporada=[];
+//   localStorage.setItem("temporada", JSON.stringify(temporada));
+
 regular = JSON.parse(localStorage.getItem("regular"));
 temporada = JSON.parse(localStorage.getItem("temporada"));
 producto_covid = JSON.parse(localStorage.getItem("producto_covid"));
