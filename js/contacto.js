@@ -31,7 +31,7 @@ function validarForm(nombre, email, telefono, mensaje) {
         alert("Nombre muy corto");
 
     }
-//Hola que tal aqui para mi rama
+    //Hola que tal aqui para mi rama
     // var expression = /^[\(]?[\+]?(\d{2}|\d{3})[\)]?[\s]?((\d{6}|\d{8})|(\d{3}[\*\.\-\s]){2}\d{3}|(\d{2}[\*\.\-\s]){3}\d{2}|(\d{4}[\*\.\-\s]){1}\d{4})|\d{8}|\d{10}|\d{12}$/;
     //var telefone = telefono.toString();
     if (isNaN(telefono)) {
@@ -48,7 +48,7 @@ function validarForm(nombre, email, telefono, mensaje) {
     if (!correcto) {
         alert("Algunos campos no estan correctos,")
     } else {
-        
+
         var formulario = new Form(nombre, email, telefono, mensaje);//CREA EL OBJETO CON LOS ATRIBUTOS DEL CONSTRUCTOR
         registros.push(formulario);//AÑADE elemento a la lista
         localStorage.setItem("Formularios", JSON.stringify(registros));//Guarda en local storage

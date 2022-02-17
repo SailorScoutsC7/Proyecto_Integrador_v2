@@ -8,22 +8,20 @@ body {
 
 
 h1{
-	padding: 5px 0;
-	margin: 1px 0;
+	padding: 10px;
+	margin: 10px;
 	background-color: #F6A015;
 	color:#704B1C;
-	height: 45px;
-	border-radius: 20px;
+	border-radius: 10px;
 	font-size: 34px;
   }
 
   #intro{
-	padding: 5px 0;
-	margin: 5px 0;
+	padding:20px;
+	margin: 10px ;
 	background-color: #704B1C;
 	color: whitesmoke;
 	border-radius: 10px;
-	height: 150px;
 	font-size: large;
 	
 	
