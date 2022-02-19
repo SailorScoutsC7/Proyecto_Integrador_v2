@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
     box-shadow: 0 2px 4px 0 rgb(125, 78, 36);
     min-height: 10px;
   }
@@ -7,7 +7,7 @@
     }
   .nav-link:hover{
     color: rgb(246,160,28)
-  }
+  } */
 
   body {
     font-family: "Roboto", sans-serif;
@@ -63,7 +63,7 @@ input[type="password"]{
 
 }
 
-.btn-primary{
+.enviar{
   border: none;
   width: 100%;
   color: #F6A015;
@@ -75,7 +75,7 @@ input[type="password"]{
 
 }
 
-.btn-primary:hover{
+.enviar:hover{
   background: #D18A50;
 
 }
@@ -113,14 +113,3 @@ label{
       }
 }
 
-#logodamor{
-  position: relative;
-    top: 50px; /* adjust the values ​​to move the image */
-    left: 15px;
-    width: 150px;
-    height: 150px;
-    margin: 1%;
-    display: block;
-    position:  fixed;
-    z-index: 3;
-  }

@@ -2,19 +2,6 @@
   list-style: circle;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  background: url(../html/assets/Store/fondos/FONDO_DAMOR.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-
-}
-
-
-/* form format*/
-
-
 @media (min-width:768px)
 {
 .body {
@@ -24,16 +11,6 @@ body {
     border-radius: 3%;
     background-color: rgba(201, 201, 201, .7);
 }
-}
-
-#logo {
-  object-position: left;
-  width: 60px;
-  height: 40px;
-}
-
-img { /* se cambio a img1 por que cambiaba todas las imagenes */
-  border-radius: 45%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400);
@@ -59,29 +36,20 @@ form textarea {
   border-bottom: 2px solid #F6A015;
 }
 
-form button {
+.enviar {
   display: block;
-  background-color: #0095eb;
+  background-color: #704b1c;
   padding: 10px 45px 10px 45px;
   border: 0;
   font-size: 1em;
   color: white;
   font-family: "Roboto", sans-serif;
 }
-form button.hover {
-  background-color: #046193;
+.enviar:hover {
+  background-color: #F6A015;
 }
 textarea {
   resize: none;
-}
-
-
-
-  img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
 }
 
 .form-header{
@@ -98,15 +66,3 @@ h1{
   font-size: 40px;
 
 }
-
-#logodamor{
-  position: relative;
-    top: 50px; /* adjust the values ​​to move the image */
-    left: 15px;
-    width: 150px;
-    height: 150px;
-    margin: 1%;
-    display: block;
-    position:  fixed;
-    z-index: 3;
-  }
