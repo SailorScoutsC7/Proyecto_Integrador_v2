@@ -26,6 +26,13 @@ ul, li, a, button {
   text-decoration: none;
 }
 
+#boton{
+  background:  #f6a015;
+}
+#boton:active{
+ background:  #ffffff;
+ color: black;
+}
 
 header {
   display: flex;
@@ -72,6 +79,6 @@ header {
 }
 
 .button:hover {
-  background-color: rgba(246,160,28,1);
+  background: rgba(246,160,28,1);
 
 }
