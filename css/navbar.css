@@ -28,9 +28,15 @@ ul, li, a, button {
 
 #boton{
   background:  #f6a015;
+  padding: 9px 10px;
+  background-color: rgba(246,160,28,.3);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer; 
 }
 #boton:active{
- background:  #ffffff;
+  background: rgba(246,160,28,1);
  color: black;
 }
 
@@ -68,17 +74,4 @@ header {
   color: #f6a015;
 }
 
-.button {
-  padding: 9px 10px;
-  background-color: rgba(246,160,28,.3);
-  border: none;
-  border-radius: 10px;
-  transition: all 0.3s ease 0s;
-  cursor: pointer; 
-  
-}
 
-.button:hover {
-  background: rgba(246,160,28,1);
-
-}

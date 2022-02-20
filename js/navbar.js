@@ -8,7 +8,7 @@
             '<li><a href="Tienda.html">Tienda</a></li>\n' +
             '<li><a href="https://www.faeeac.org">FAEE</a></li>\n' +
             '<li><a href="Contacto.html">Contacto</a></li>\n' +
-            '<li><button href="IniciarSesion.html" id="boton">Iniciar Sesión</button></li>\n' +
+            '<li><a button href="IniciarSesion.html" id="boton">Iniciar Sesión</a></li>\n' +
             '<li><a href=""><img src="assets/carrito de compras.png" alt="" id="carrito"></a></li>\n' +
         '</ul>\n' +
     '</nav>\n' +
